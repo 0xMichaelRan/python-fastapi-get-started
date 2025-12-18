@@ -5,6 +5,6 @@ app = FastAPI(title="FastAPI-on-Vercel")
 
 @app.get("/")
 def read_root():
-    return {"message": "Hello from FastAPI + uv + Vercel"}
+    return {"message": "Hello from FastAPI + uv."}
 
 handler = Mangum(app)      # AWS Lambda handler that Vercel calls
